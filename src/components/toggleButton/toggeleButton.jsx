@@ -2,30 +2,40 @@ import "./toggleButton.css";
 import {ThemeContext} from '../../App';
 import { useContext } from 'react';
 import moonImg from '../../assets/images/moon.svg'
+import sunImg from '../../assets/images/002-sun.svg'
 
 function ToggleButton() {
-  const theme =useContext(ThemeContext);
+  const themeContext = useContext(ThemeContext);
 
-  function onHandleChange(event) {
-    let newValue ;
-    if(event.target.checked ==true ) {
-      newValue ='light';
-      
-    }else{
-      newValue ='dark';
+  function handleOnChange() {
+    let newValue;
+    if (themeContext.theme == "light") {
+      newValue = "dark";
+    } else {
+      newValue = "light";
     }
-    console.log(newValue);
-    theme.setTheme(newValue);
-    
+    themeContext.setTheme(newValue);
   }
+
   return (
    
-    <button className='toggleBtn'onClick={onHandleChange}>
-        <span>Dark</span>
+   
+<button className='toggleBtn' onClick={handleOnChange}>
+  {themeContext.theme == "light" ? (
+    <>
+      <span >Light</span>
+      <img src={sunImg} />
+    </>
+  ) : (
+    <>
+      <label>Dark</label>
+      <img  src={moonImg} />
+    </>
+  )}
+</button>
 
-        <img src={moonImg}/>
-   </button>
-  );
+);
+
 }
 
 export default ToggleButton;

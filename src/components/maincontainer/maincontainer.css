@@ -7,10 +7,10 @@ main{
     align-items: center;
 }
 .darkheader{
-    background-color: black;
+    background-color: rgba(246, 248, 255, 1);
 }
 .lightheader{
-    background-color: rgba(246, 248, 255, 1);
+    background-color: black;
 }
 .container{
     width:730px;
