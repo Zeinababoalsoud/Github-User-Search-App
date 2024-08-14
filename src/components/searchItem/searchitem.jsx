@@ -5,7 +5,7 @@ import { useContext } from 'react';
 function SearchItem (props){
     const passValues = useContext(ThemeContext);
     return(
-        <div id='searchcontainer' className ={passValues.theme+'search'}>
+        <div id='searchcontainer' className ={passValues.theme +'search'}>
             <div className='inputDiv'>
                 <img src={searchIcon} className='searchImg'/>
                 <input type="text" placeholder='Search GitHub username...'/>
