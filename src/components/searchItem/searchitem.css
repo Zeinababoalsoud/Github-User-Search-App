@@ -1,0 +1,83 @@
+#searchcontainer{
+    width:100%;
+    height:69px;
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+.inputDiv{
+    column-gap:27px;
+    margin-left: 32px;
+    box-sizing: border-box;
+    
+}
+.inputDiv input{
+    border:none;
+    color:#4B6A9B;
+    font-size:18px;
+}
+.searchBtn ,
+.inputDiv{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    background-color: transparent;
+}
+.searchBtn{
+    justify-content: end;
+    margin-right:13px;
+}
+.search-btn{
+    border:none;
+    width: 106px;
+    height:50px;
+    background-color: #0079FF;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    #searchcontainer{
+        width:573px;
+        height:69px;
+        margin-left: 40px;
+      
+    }
+}
+@media only screen and (max-width: 375px) {
+    #searchcontainer{
+        width:327px;
+        height:60px;
+      
+    }
+    .search-btn{
+        width: 84px;
+        height:46px;
+    }
+    .inputDiv{
+        width:184px;
+        height:25px;
+        font-size: 13px; 
+        margin: 5px;
+        column-gap: 5px;
+    }
+    ::placeholder{
+        font-size: 13px; 
+    }
+    .searchImg{
+        width:20px;
+        height:20px;
+    }
+}
+.darksearch{
+    background-color: #4B6A9B;
+}
+.lightsearch{
+    background-color: #2a2c30;
+}

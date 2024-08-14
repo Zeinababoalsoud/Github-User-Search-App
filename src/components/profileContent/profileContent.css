@@ -1,0 +1,220 @@
+#profileContainer{
+    width:100%;
+    height:419px;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+}
+.profileImg{
+    width:117px;
+    height:117px;
+    border-radius:50%;
+    margin-left: 48px;
+    margin-top: 48px;
+    margin-right: 37px;
+    box-sizing: border-box;
+    
+}
+.infocontainer{
+    flex-grow: 1;
+    padding: 48px 48px 48px 0px;
+    box-sizing: border-box;
+}
+.info{
+    height:117px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.followers{
+    height:185px;
+}
+.user-name{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    color:#2B3442;
+    font-size: 26px;
+    font-weight: bold;
+}
+.date ,
+.link{
+    color:#697C9A;
+    font-size: 15px;;
+}
+.link{
+    color:#0079FF;
+}
+.lab{
+    color:#4B6A9B;
+}
+.followers{
+    width:480px;
+    height:185px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.topDiv{
+    width:100%;
+    height:85px;
+    background-color: #F6F8FF;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.con{
+    display:flex;
+    flex-direction: column;
+}
+.numbers{
+    font-weight: bold;
+    font-size: 22px;
+}
+.letters{
+    color:#4B6A9B;
+    font-size: 13px;
+}
+.con{
+    display:flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.bottomDiv{
+    display:flex;
+    flex-direction: column;
+    width:480px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 10px;
+}
+.contact-info{
+    display:flex;
+    width:100%;
+}
+.contact-info button{
+    border:none;
+    background-color: transparent;
+    display:flex;
+    column-gap: 10px;
+    width: 50%;
+    color:#4B6A9B;
+    font-size: 15px;
+}
+/* div for small screen */
+.smallScreens{
+    margin-left: 40px;
+    display:none;
+    flex-direction: column;
+}
+.resDiv{
+    display:flex;
+    column-gap: 20px;
+}
+.profileImg2{
+    width:117px;
+    height:117px;
+    border-radius: 50%;
+}
+.user-names{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    #profileContainer{
+        margin-left: 40px;
+        background-color: white;
+        width:573px;
+        height:481px;
+    }
+    .smallScreens{
+        display:flex;
+    }
+    .profileImg ,
+    .info{
+        display:none;
+    }
+    .followers{
+        width:493px;
+        margin-left: 40px;
+    }
+} 
+@media only screen and (max-width: 375px) {
+    #profileContainer{
+        width:327px;
+        height:517px;
+
+    }
+    .smallScreens{
+        display:flex;
+        
+    }
+    .profileImg ,
+    .info{
+        display:none;
+    }
+    .bottomDiv{
+        height:127px;
+   
+    }
+    .contact-info{
+        flex-direction: column;
+        
+    }
+    .myp{
+        font-size: 13px;
+        width:279px;
+        height:75px;
+        text-wrap: wrap;
+    }
+    .profileImg2{
+        width:70px;
+        height:70px;
+    }
+    .smallScreens{
+       margin-left: 20px;
+       width:517px;
+    }
+    .infocontainer{
+        padding: 10px; 
+    }
+    .followers{
+        height:75px;
+        width:279px;
+        margin-left: 20px;
+        margin-left: 10px;
+    }
+    .topDiv{
+        padding:20px;
+        box-sizing: border-box;
+    }
+    .bottomDiv{
+        margin-top: 20px;
+        width:279px;
+        height:127px;
+        justify-content: flex-start;
+        align-items: self-start;  
+    }
+    .contact-info{
+        width:100%;
+        justify-content: space-between;
+        row-gap: 20px;
+        
+    }
+    .contact-info button{
+        width:100%;
+    }
+
+    span{
+        font-size: 13px;
+    }
+} 

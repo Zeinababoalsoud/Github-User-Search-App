@@ -1,0 +1,17 @@
+.logo{
+    width:128px;
+    height:100%;
+}
+.toggleBtn{
+    width:78px;
+    height:20px;
+    background-color: transparent;
+    border: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggleBtn span {
+    color:#697C9A;
+    font-weight:bold;
+}

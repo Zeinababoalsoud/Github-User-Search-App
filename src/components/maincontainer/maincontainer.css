@@ -1,0 +1,42 @@
+main{
+    width:100%;
+    height:900px;
+    background-color: rgba(246, 248, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkheader{
+    background-color: black;
+}
+.lightheader{
+    background-color: rgba(246, 248, 255, 1);
+}
+.container{
+    width:730px;
+    height:585px;
+    display:flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+    main{
+        height:1024px;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        height:648px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    main{
+        height:777px;
+
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        height:648px;
+    }
+   
+}
