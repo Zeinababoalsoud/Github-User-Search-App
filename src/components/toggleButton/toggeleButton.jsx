@@ -9,10 +9,10 @@ function ToggleButton() {
 
   function handleOnChange() {
     let newValue;
-    if (themeContext.theme == "light") {
-      newValue = "dark";
-    } else {
+    if (themeContext.theme == "dark") {
       newValue = "light";
+    } else {
+      newValue = "dark";
     }
     themeContext.setTheme(newValue);
   }
@@ -23,13 +23,13 @@ function ToggleButton() {
 <button className='toggleBtn' onClick={handleOnChange}>
   {themeContext.theme == "light" ? (
     <>
-      <span >Light</span>
-      <img src={sunImg} />
+      <span >Dark</span>
+      <img src={moonImg} />
     </>
   ) : (
     <>
-      <label>Dark</label>
-      <img  src={moonImg} />
+      <span>Light</span>
+      <img  src={sunImg} />
     </>
   )}
 </button>
