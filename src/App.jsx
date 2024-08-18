@@ -1,21 +1,27 @@
-import './App.css'
-import MainContainer from './components/maincontainer/maincontainer'
-// import ToggleButton from './components/toggleButton/toggeleButton';
-import {useState , createContext } from "react";
- export const ThemeContext = createContext(null);
+import "./App.css";
+import Content from "./Component/profileContent/profileContent";
+import SearchBar from "./Component/Searchitem/searchitem";
+import ToggleHeader from "./Component/navbar/navbar";
+import { createContext, useState } from "react";
+
+export const ThemeContext = createContext(null);
 
 function App() {
-  const [theme ,setTheme] = useState('light');
-
+  const [theme, setTheme] = useState("dark");
 
   return (
-    <>
-        <ThemeContext.Provider value={{theme ,setTheme}}>
-          <MainContainer></MainContainer>
+    <main>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <div className={`page ${theme}`}>
+          <div className="theme-content">
+            <ToggleHeader></ToggleHeader>
+            <SearchBar></SearchBar>
+            <Content></Content>
+          </div>
+        </div>
       </ThemeContext.Provider>
-
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
